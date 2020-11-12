@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+    <b:include data='blog' name='all-head-content'/>
+    <title>
+      <data:blog.pageTitle/>
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'/>
+    <b:skin>
+    </b:skin>
+    <style>
+      body {
+        font-family: 'Inconsolata';font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <b:section id='hoge'></b:section>
+
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+
+      </b:if>
+      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+
+      </b:if>
+      <div id="header">
+        <data:blog.pageTitle/>
+      </div>
+      <div id="header">
+        <data:post.body/>
+      </div>
+    </div>
+  </body>
+</html>

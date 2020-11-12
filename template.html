@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><$BlogPageTitle$></title>
+    <$BlogMetaData$>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <style type="text/css">
+      body {
+          font-family: 'Inconsolata';font-size: 22px;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+		    <h1 id="blog-title">
+			    <ItemPage><a href="<$BlogURL$>"></ItemPage><$BlogTitle$><ItemPage></a></ItemPage>
+		    </h1>
+            <div id="description"><$BlogDescription$></div>
+        <div>
+        <div id="content">
+            <div id="sidebar">
+                <MainOrArchivePage>
+					<h2 class="sidebar-title"><$I18NArchives$></h2>
+					<ul class="archive-list">
+					    <BloggerArchives>
+						    <li><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></li>
+					    </BloggerArchives>
+					    <ArchivePage>
+						    <li><a href="<$BlogURL$>"><$I18NCurrentPosts$></a></li>
+					    </ArchivePage>
+					</ul>
+				</MainOrArchivePage>
+				<p id="blogfeeds"><$BlogFeedsVertical$></p>
+            </div>
+            <div id="main">
+                <Blogger>
+                    <BlogDateHeader>
+                        <h2 class="date-header"><$BlogDateHeaderDate$></h2>
+                    </BlogDateHeader>
+                    <div class="post">
+                        <a name="<$BlogItemNumber$>"></a>
+                        <BlogItemTitle>
+                            <BlogItemUrl><a href="<$BlogItemUrl$>" title="external link" class="title-link"></BlogItemUrl>
+                            <h3 class="post-title"><$BlogItemTitle$></h3>
+                            <BlogItemUrl></a></BlogItemUrl>
+                        </BlogItemTitle>
+                        <div class="post-body"><$BlogItemBody$></div>
+                        <div class="post-footer">
+                            <em><$I18NPostedByAuthorNickname$> @ <a href="<$BlogItemPermalinkUrl$>" title="permanent link"><$BlogItemDateTime$></a></em> &nbsp;
+                            <BlogItemCommentsEnabled>
+                                <a class="comment-link" href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>><span style="text-transform:lowercase"><$I18NNumComments$></span></a>
+                            </BlogItemCommentsEnabled>
+                            <$BlogItemControl$>
+                        </div>
+                    </div>
+                </Blogger>
+				<ItemPage>
+					<div id="comments">
+					<BlogItemCommentsEnabled><a name="comments"></a>
+						<h4><$I18NNumComments$>:</h4>
+						<dl id="comments-block">
+						<$CommentPager$>
+						<BlogItemComments>
+						<dt class="comment-data" id="<$BlogCommentAnchorName$>"><a name="<$BlogCommentAnchorName$>"></a>
+						<$I18NAtCommentTimeWithPermalink$>,
+						<$I18NCommentAuthorSaid$>
+						</dt>
+						<dd class="comment-body">
+						<p><$BlogCommentBody$></p>
+						<$BlogCommentDeleteIcon$>
+						</dd>
+						</BlogItemComments>
+						<$CommentPager$>
+						</dl>
+						<p class="comment-timestamp">
+						<$BlogItemCreate$>
+						</p>
+						<p id="postfeeds"><$BlogItemFeedLinks$></p>
+						</BlogItemCommentsEnabled>	    
+						<a href="<$BlogURL$>">&lt;&lt; <$I18NHome$></a>
+						</p>
+					</div>
+				</ItemPage>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+        console.log('hello');
+    </script>
+</body>
+</html>
